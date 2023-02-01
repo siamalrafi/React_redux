@@ -8,7 +8,7 @@ const Cart = () => {
   console.log(carts);
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl gap-14 mx-auto my-10'>
-      {carts?.map((cart, i) => <ProductCard product={cart} key={i} />)}
+      {carts?.sort((a, b) => a._id - b._id).map((cart, i) => <ProductCard product={cart} key={i} />)}
     </div>
   );
 };

@@ -17,7 +17,9 @@ const ProductCard = ({ product }) => {
       key={product._id}
     >
       <div className='h-52 w-52 mx-auto'>
-        <p>Quantity : {product.quantity}</p>
+        {pathname.includes("cart") &&
+          <p>Quantity : {product.quantity}</p>
+        }
         <img src={product.image} alt={product.model} />
       </div>
       <h1 className='font-bold text-center'>{product.model}</h1>

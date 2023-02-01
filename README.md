@@ -1,3 +1,3 @@
 ## server
 
-server link : https://github.com/siamalrafi/moon-tech-server
+server link : https://github.com/siamalrafi/Moon_Tech_Server
